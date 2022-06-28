@@ -11,7 +11,9 @@
             <property name="javax.persistence.jdbc.password" value=""/>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/ex1"/>
 <!--             db마다 sql문법과 함수가 다르듯이 각각의 방언이 있다. 그래서 dialect에서 db에 맞는 것을 쓰면 된다. -->
-            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>-->
+<!--           우리가 설정한 dialect를 여기다가 선언해서 쓰면 된다. -->
+            <property name="hibernate.dialect" value="dialect.MyH2Dialect"/>
 <!--            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/> -->
 <!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>-->
             <!-- 옵션 -->
