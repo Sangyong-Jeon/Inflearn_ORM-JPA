@@ -67,7 +67,6 @@ public class Member {
     }
 
 
-
     public Address getHomeAddress() {
         return homeAddress;
     }
@@ -76,9 +75,9 @@ public class Member {
         this.homeAddress = homeAddress;
     }
 
-    //    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn
-//    private Team team;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn
+    private Team team;
 
 
     public Set<String> getFavoriteFoods() {
@@ -87,5 +86,22 @@ public class Member {
 
     public void setFavoriteFoods(Set<String> favoriteFoods) {
         this.favoriteFoods = favoriteFoods;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+        team.getMembers().add(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", homeAddress=" + homeAddress +
+                ", favoriteFoods=" + favoriteFoods +
+                ", addressHistory=" + addressHistory +
+                ", team=" + team +
+                '}';
     }
 }
