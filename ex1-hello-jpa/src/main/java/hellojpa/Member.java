@@ -76,7 +76,7 @@ public class Member {
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn
+    @JoinColumn(name = "TEAM_ID")
     private Team team;
 
 
@@ -93,15 +93,15 @@ public class Member {
         team.getMembers().add(this);
     }
 
+    public Team getTeam() {
+        return team;
+    }
+
     @Override
     public String toString() {
         return "Member{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
-                ", homeAddress=" + homeAddress +
-                ", favoriteFoods=" + favoriteFoods +
-                ", addressHistory=" + addressHistory +
-                ", team=" + team +
                 '}';
     }
 }
