@@ -2,6 +2,7 @@ package hellojpa;
 
 import jdk.nashorn.internal.objects.annotations.Getter;
 import jdk.nashorn.internal.objects.annotations.Setter;
+import org.hibernate.annotations.BatchSize;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class Team extends BaseEntity{
     private Long id;
     private String name;
 
+//    @BatchSize(size = 100) // 여기서 배치사이즈를 정하거나 글로벌세팅인 persistence.xml에 배치사이즈를 설정한다.
     @OneToMany
     @JoinColumn(name = "TEAM_ID")
     private List<Member> members = new ArrayList<>();

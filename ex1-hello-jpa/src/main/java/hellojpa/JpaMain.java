@@ -50,8 +50,10 @@ public class JpaMain {
             // 1. SQL에 DISTINCT 추가
             // 2. 애플리케이션에서 엔티티 중복 제거
             // String query = "select distinct t from Team t join fetch t.members";
-            String query = "select t from Team t join fetch t.members";
+            String query = "select t from Team t";
             List<Team> result = em.createQuery(query, Team.class)
+                    .setFirstResult(0)
+                    .setMaxResults(2)
                     .getResultList();
 
             System.out.println("result = " + result.size());
