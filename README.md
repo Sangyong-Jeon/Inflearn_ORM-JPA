@@ -36,4 +36,4 @@ JPA를 처음 시작할 때 JPA 기본 이론을 학습하는 강의이다.
 ### 10. 객체지향 쿼리 언어1 - 기본 문법
 
 ### 11. 객체지향 쿼리 언어2 - 중급 문법
-- <a href="https://github.com/Sangyong-Jeon/Inflearn_ORM-  JPA/blob/main/word/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B42%20-%20%EC%A4%91%EA%B8%89%20%EB%AC%B8%EB%B2%95/Named%EC%BF%BC%EB%A6%AC.md">Named 쿼리</a>
+- <a href="https://github.com/Sangyong-Jeon/Inflearn_ORM-JPA/blob/main/word/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%BF%BC%EB%A6%AC%20%EC%96%B8%EC%96%B42%20-%20%EC%A4%91%EA%B8%89%20%EB%AC%B8%EB%B2%95/Named%EC%BF%BC%EB%A6%AC.md">Named 쿼리</a>
