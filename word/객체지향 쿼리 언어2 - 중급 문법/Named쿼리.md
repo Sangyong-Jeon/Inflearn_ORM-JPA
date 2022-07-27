@@ -1,6 +1,4 @@
-# JPQL - Named 쿼리
-
-## Named 쿼리 - 정적 쿼리
+# Named 쿼리 - 정적 쿼리
 
 - 미리 정의해서 이름을 부여하여 사용하는 JPQL
 - 정적 쿼리
@@ -9,7 +7,7 @@
 - **애플리케이션 로딩 시점에 쿼리를 검증**
   <br><br>
 
-## Named 쿼리 - 어노테이션
+# Named 쿼리 - 어노테이션
 
 ```
 @Entity
@@ -52,7 +50,7 @@ public class Member {
 Named 쿼리를 여러개 정의하고 싶으면 `@NamedQueries`를 사용하여 정의한다.
 <br><br>
 
-## Named 쿼리 - XML에 정의
+# Named 쿼리 - XML에 정의
 
 짧고 직관적인 것은 어노테이션이지만 엔티티에 Named 쿼리를 많이 작성하는 것보단, 따로 xml파일로 분리하여 관리하는 것이 더 좋을 것 같다.
 
@@ -83,7 +81,7 @@ Named 쿼리를 여러개 정의하고 싶으면 `@NamedQueries`를 사용하여
 `META-INF/persistence.xml` 파일에서 `<mapping-file>` 태그에 아까 Named 쿼리를 설정했던 `ormMember.xml`을 넣어서 사용하면 된다.
 <br><br>
 
-## Named 쿼리 환경에 따른 설정
+# Named 쿼리 환경에 따른 설정
 
 - 어노테이션과 XML이 같이 설정되어 있으면 XML이 항상 우선권을 가진다.
 - 애플리케이션 운영 환경에 따라 다른 XML을 배포할 수 있다.
